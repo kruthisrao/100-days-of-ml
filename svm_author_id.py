@@ -32,7 +32,7 @@ clf.fit(features_train,labels_train)
 print "Time to train: ", round((time() - t0), 3), "s"
 t1 = time()
 pred = clf.predict(features_test)
-print(pred)
+
 print "Time to predict: ", round((time() - t1), 3), "s"
 acc=accuracy_score(pred,labels_test)
 print(acc)
@@ -47,6 +47,17 @@ for i in range(len(pred)):
 	if pred[i]==1:
 		count=count+1
 print(count)
+'''
+no. of Chris training emails: 7936
+no. of Sara training emails: 7884
+Time to train:  119.165 s
+Time to predict:  12.638 s
+0.9908987485779295
+1
+0
+1
+877
+'''
 #########################################################
 
 
